@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Script from 'next/script'
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Home() {
@@ -53,7 +54,7 @@ export default function Home() {
         <div className="kutup-nav-container-1 w-container">
           <div className="kutup-first-element">
             <div className="kutup-horizontal-flex">
-              <a href=""
+              <Link href="/"
                 className="kutup-brand-link-line w-nav-brand">
                 <img
                   src="logo.png"
@@ -62,7 +63,7 @@ export default function Home() {
                   height={100}
                   alt="Logo"
                 />
-              </a>
+              </Link>
               <div className="kutup-mobile-portrait-hide">
                 <div className="kutup-flex-divider">
                   <a data-w-id="7cab4810-f5f8-4a86-2fc4-ee32fea0c864"
@@ -83,12 +84,12 @@ export default function Home() {
           </div>
           <div className="kutup-last-item">
             <nav role="navigation" className="kutup-nav-menu w-nav-menu">
-              <a href="#"
+              <Link href="/"
                 className="kutup-nav-link w-nav-link"
-                style={{ maxWidth: "1200px" }}>Home</a>
-              <a href="/task-planner"
+                style={{ maxWidth: "1200px" }}>Home</Link>
+              <Link href="/task-planner"
                 className="kutup-nav-link w-nav-link"
-                style={{ maxWidth: "1200px" }}>Schedular</a>
+                style={{ maxWidth: "1200px" }}>Schedular</Link>
               <a href="tel:9902785933"
                 className="kutup-nav-link w-nav-link" style={{ maxWidth: "1200px" }}>Contact</a>
             </nav>
@@ -136,7 +137,7 @@ export default function Home() {
                 </div>
               </div>
             )}
-            <a href="" className="w-inline-block">
+            <Link href="/" className="w-inline-block">
               <img
                 src="logo.png"
                 loading="lazy"
@@ -144,9 +145,9 @@ export default function Home() {
                 height={100}
                 alt="Logo"
               />
-            </a>
+            </Link>
             <div className="kutup-footer-horizontal-flex">
-              <a href="/" className="kutup-footer-link">Home</a>
+              <Link href="/" className="kutup-footer-link">Home</Link>
               <a href="#" className="kutup-footer-link">About</a>
               <a href="tel:9902785933" className="kutup-footer-link">Contact</a>
             </div>
